@@ -95,7 +95,7 @@ install() {
 
     # Prompt for initial sudo password & keep alive
     sudo -k
-    saferun sudo echo "sudo authenticaion successful!"
+    saferun sudo echo "sudo authentication successful!"
     while true ; do sudo -n true ; sleep 60 ; kill -0 "$$" || exit ; done 2>/dev/null &
 
     # Download the bootstrap, if not already there
